@@ -1,0 +1,16 @@
+
+{{#if electionData}}
+    <a href="/">return to search</a>
+
+    <div class="results">
+        <h1>{{electionData.description}}</h1>
+        <p>Date: {{electionData.date}}</p>
+    </div>
+    <div class="information">
+        <h2>Information about voting</h2>
+        <p>Website: <a href="{{electionData.website}}">link</a></p>
+        <p>Find your polling location: <a href="{{electionData.polling-place-url}}">link</a></p>
+    </div>
+{{else}}
+  No results were retrieved for this search. Please try a new <a href="/">search</a>
+{{/if}}
